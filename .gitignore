@@ -12,13 +12,19 @@
 *.iml
 *.ipr
 *.iws
+
 .idea/
 
 /target
 keystore.jks
+pom.xml
+/lib
+/out
+/test-output
 
 # ES output from unit tests
 /data
+
 
 #log cleaner file that started showing up
 log-cleaner.log
