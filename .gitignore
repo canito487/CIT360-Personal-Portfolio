@@ -1,0 +1,28 @@
+# Java class files
+*.class
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+.DS_Store
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+/target
+keystore.jks
+
+# ES output from unit tests
+/data
+
+#log cleaner file that started showing up
+log-cleaner.log
+
+#Vagrant files
+Vagrantfile*
+.vagrant/
