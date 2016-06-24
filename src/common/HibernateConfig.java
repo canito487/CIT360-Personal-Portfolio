@@ -51,7 +51,7 @@ public class HibernateConfig
 
 		/*
          *  Add your classes here that you want to match your database tables
-		 *  The example has a common.User and a common.PhoneNumber class.
+		 *  The example has a common.TestCase and a common.FeatureSuite class.
 		 */
 
         config.addAnnotatedClass(TestCase.class);

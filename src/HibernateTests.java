@@ -34,8 +34,8 @@ public class HibernateTests {
         Transaction transaction = session.beginTransaction();
 
         // sampleTestCase name used to verify insert of test case
-        String tcName = "test5";
-        String dbTestCaseName = "'test5'";
+        String tcName = "test6";
+        String dbTestCaseName = "'test6'";
 
         // Step1: Add a new test case
         hibernateExample.addnewTestCase(tcName, 0);
@@ -63,8 +63,8 @@ public class HibernateTests {
         HibernateUtil hibernateExample = new HibernateUtil();
 
         // sampleTestCase name used to verify insert of test case
-        String dbTcName = "'test5'";
-        String verifiableTcName = "test5";
+        String dbTcName = "'test1'";
+        String verifiableTcName = "test1";
 
         // Step 1: Get the test case
         TestCase testCase = hibernateExample.getATestCase(dbTcName);
@@ -122,7 +122,7 @@ public class HibernateTests {
 
         String stringQuery = "from TestCase";
 
-        // Query the database selecting all from the test case table and streaming it.
+        // Query the database selecting all from the test case table and it.
         List<TestCase> testCases = (List<TestCase>) session.createQuery(stringQuery).list();
 
         // Run through every testCase and delete it using multiple threads in a runnable task
