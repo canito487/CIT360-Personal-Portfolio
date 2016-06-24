@@ -5,12 +5,10 @@ package common.MVC;
  */
 public class ComputerView {
 
-
-    public void printComputerDetails(String computerManufacturer, Integer modelNumber, Integer memory){
+    public void printComputerDetails(String computerManufacturer, Integer modelNumber, Integer memory) {
         System.out.println("Manufacturer: " + computerManufacturer);
         System.out.println("Model Number: " + modelNumber);
         System.out.println("Memory: " + memory);
     }
-
 
 }

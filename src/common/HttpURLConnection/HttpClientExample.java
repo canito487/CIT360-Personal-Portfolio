@@ -16,6 +16,7 @@ import java.util.List;
 
 /**
  * Created by alex.hernandez on 6/22/16.
+ * HttpClientExample using https://github.com/typicode/jsonplaceholder#how-to which is a fake api rest framework
  */
 public class HttpClientExample {
 
@@ -36,7 +37,7 @@ public class HttpClientExample {
     // HTTP GET request
     private void sendGet() throws Exception {
 
-        String url = "http://jsonplaceholder.typicode.com";
+        String url = "http://jsonplaceholder.typicode.com/posts/1";
 
         HttpClient client = new DefaultHttpClient();
         HttpGet request = new HttpGet(url);
@@ -75,11 +76,11 @@ public class HttpClientExample {
         post.setHeader("User-Agent", USER_AGENT);
 
         List<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
-        urlParameters.add(new BasicNameValuePair("sn", "C02G8416DRJM"));
-        urlParameters.add(new BasicNameValuePair("cn", ""));
-        urlParameters.add(new BasicNameValuePair("locale", ""));
-        urlParameters.add(new BasicNameValuePair("caller", ""));
-        urlParameters.add(new BasicNameValuePair("num", "12345"));
+        urlParameters.add(new BasicNameValuePair("testcase", "Send a Fax"));
+        urlParameters.add(new BasicNameValuePair("testcaseId", "3302"));
+        urlParameters.add(new BasicNameValuePair("featureSuite", "201"));
+        urlParameters.add(new BasicNameValuePair("description", "Send a fax to a user"));
+        urlParameters.add(new BasicNameValuePair("step1", "send a fax"));
 
         post.setEntity(new UrlEncodedFormEntity(urlParameters));
 

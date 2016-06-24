@@ -5,7 +5,7 @@ package common.MVC;
  */
 public class ComputerUtil {
 
-    public static Computer defaultComputer(){
+    public static Computer defaultComputer() {
         Computer computer = new Computer();
         computer.setManufacturer("Asus");
         computer.setModelNumber(4489);

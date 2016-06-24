@@ -28,5 +28,4 @@ public class ArrayListDemo {
         System.out.println("Contents of al: " + al);
     }
 
-
 }

@@ -1,7 +1,5 @@
 package common.MVC;
 
-
-
 /**
  * Created by alex.hernandez on 6/18/16.
  */

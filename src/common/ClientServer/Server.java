@@ -28,8 +28,7 @@ public class Server {
                     socket.close();
                 }
             }
-        }
-        finally {
+        } finally {
             listener.close();
         }
     }
