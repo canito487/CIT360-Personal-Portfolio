@@ -7,10 +7,10 @@ public class MVCExample {
 
     public static void main(String[] args) {
 
-        //fetch student record based on his roll no from the database
+        //Create a new computer using default computer info
         Computer model = ComputerUtil.defaultComputer();
 
-        //Create a view : to write student details on console
+        //Create a view : to write computer details on console
         ComputerView view = new ComputerView();
 
         ComputerController controller = new ComputerController(model, view);
@@ -19,7 +19,7 @@ public class MVCExample {
 
         System.out.println("\n\n");
 
-        //update model data
+        //Update model data after computer upgrade
         controller.setComputerManufacturer("Dell");
         controller.setModelNumber(3001);
         controller.setMemory(4096);
