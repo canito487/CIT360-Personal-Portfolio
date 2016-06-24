@@ -17,9 +17,13 @@ public class JSONExample {
         app.run();
     }
 
+    /**
+     * Creates a default Person and displays output of that Person in terminal
+     */
     private void run() {
         ObjectMapper mapper = new ObjectMapper();
 
+        //Instantiate defaultPerson() Method
         Person person = PersonUtil.defaultPerson();
 
         try {
